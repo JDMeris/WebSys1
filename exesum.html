@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MERIS - World Wide Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
+
+<link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card w3-left-align w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white"><b>Home</b></a>
+    <a href="whats.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What's out there?</a>
+    <a href="help.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+    <a href="softprod.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Software Products</a>
+    <a href="technical.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Technical</a>
+    <a href="biblliography.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bibliography</a>
+    <a href="people.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">People</a>
+    <a href="history.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">History</a>
+    <a href="how.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How can I help?</a>
+    <a href="getting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Getting code</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-yellow w3-center" style="padding:128px 16px">
+
+ <div class="container w3-left-align">
+    <h1>World Wide Web - Summary</h1>
+    <div class="card w3-left-align">
+        <div class="card-body">
+          
+            <p>The <a href="index.html">WWW</a> project merges the techniques of information retrieval and hypertext to make an easy but powerful global information system.</p>
+            <p>The project is based on the philosophy that much academic information should be freely available to anyone. It aims to allow information sharing within internationally dispersed teams, and the dissemination of information by support groups. Originally aimed at the High Energy Physics community, it has spread to other areas and attracted much interest in user support, resource discovery and collaborative work areas.</p>
+
+            <h5> <b>Reader view</b> </h5>
+            <p>The WWW world consists of documents, and links. Indexes are special documents which, rather than being read, may be searched. The result of such a search is another ("virtual") document containing links to the documents found. A simple protocol (" <a href="http.html">HTTP</a> ") is used to allow a browser program to request a keyword search by a remote information server.</p>
+            <p>The web contains documents in many formats. Those documents which are hypertext, (real or virtual) contain links to other documents, or places within documents. All documents, whether real, virtual or indexes, look similar to the reader and are contained within the same addressing scheme.</p>
+            <p>To follow a link, a reader clicks with a mouse (or types in a number if he or she has no mouse). To search and index, a reader gives keywords (or other search criteria). These are the only operations necessary to access the entire world of data.</p>
+
+            <h5> <b>Information provider view</b> </h5>
+            <p>The WWW browsers can access many existing data systems via existing protocols (FTP, NNTP) or via HTTP and a gateway. In this way, the critical mass of data is quickly exceeded, and the increasing use of the system by readers and information suppliers encourage each other.</p>
+            <p>Making a web is as simple as writing a few SGML files which point to your existing data. Making it public involves running the FTP or HTTP daemon , and making at least one link into your web from another. In fact, any file available by anonymous FTP can be immediately linked into a web. The very small start-up effort is designed to allow small contributions. At the other end of the scale, large information providers may provide an HTTP server with full text or keyword indexing. This may allow access to a large existing database without changing the way that database is managed. Such gateways have already been made into Digital's VMS/Help, Technical Univerity of Graz's "Hyper-G", and Thinking Machine's "W.A.I.S." systems.</p>
+            <p>The WWW model gets over the frustrating incompatibilities of data format between suppliers and reader by allowing negotiation of format between a smart browser and a smart server. This should provide a basis for extension into multimedia, and allow those who share application standards to make full use of them across the web.</p>
+            <p>This summary does not describe the many exciting possibilities opened up by the WWW project, such as efficient document caching. the reduction of redundant out-of-date copies, and the use of knowledge daemons. There is more information in the online project documentation, including some background on hypertext and many technical notes.</p>
+
+            <h5> <b>Try it</b> </h5>
+            <p>You can try the simple line mode browser by telnetting to info.cern.ch (no user or password. From UK JANET, use the Gateway). You can also find out more about WWW in this way. This is the least sophisticated browser -- remember that the window-oriented ones are much smarter!</p>
+            <p>It is much more efficient to install a browser on your own machine. The line mode browser is currently available in source form by anonymous FTP from node info.cern.ch [currently 128.141.201.74] as
+
+                /pub/www/src/WWWLineMode_v.vv.tar.Z.
+    
+            (v.vv is the version number - take the latest.)</p>
+
+            <p>Also available is a hypertext editor for the NeXT (WWWNeXTStepEditor_v.vv.tar.Z), the ViolaWWW browser for X11, and a skeleton server daemon (WWWDaemon_v.vv.tar.Z).</p>
+            <p>Documentation is readable using www. A plain text version of the installation instructions is included in the tar file! Printable (postscript) documentation and articles are in /pub/www/doc</p>
+
+            <hr>
+            
+            <p> <a href="#"><i>Tim BL</i></a> </p>
+
+        </div>
+      </div>
+ </div>
+
+
+</header>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+ </div>
+ <p>Copyright © 2022 Internet Society</p>
+</footer>
+
+
+</body>
+</html>

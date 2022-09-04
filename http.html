@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MERIS - World Wide Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"/>
+
+<link href="styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-yellow w3-card w3-left-align w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white"><b>Home</b></a>
+    <a href="whats.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">What's out there?</a>
+    <a href="help.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+    <a href="softprod.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Software Products</a>
+    <a href="technical.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Technical</a>
+    <a href="biblliography.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bibliography</a>
+    <a href="people.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">People</a>
+    <a href="history.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">History</a>
+    <a href="how.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How can I help?</a>
+    <a href="getting.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Getting code</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-yellow w3-center" style="padding:128px 16px">
+
+ <div class="container w3-left-align">
+    <h1><b>HTTP as implemented in WWW</b></h1>
+    <p>This document defines the Hypertext Transfer protocol (HTTP) as currently implemented by the WorldWideWeb initaitive software. This is a subset of the proposed full HTTP protocol. No client profile information is transferred with the query. Future HTTP protocols will be back-compatible with this protocol.</p>
+    <p>The definition of this protocol is in the public domain.</p>
+    <p>The protocol uses the normal internet-style telnet protocol style on a TCP-IP link. The following describes how a client acquires a (hypertext) document from an HTTP server, given an HTTP document address.</p>
+
+    <div class="card w3-left-align">
+        <div class="card-body">
+            
+            <h5> <b>‣ Connection</b> </h5>
+            <p>&emsp;◦ The client makes a TCP-IP connection to the host using the domain name or IP number , and the port number given in the address.</p>
+            <p>&emsp;◦ If the port number is not specified, 80 is always assumed for HTTP.</p>
+            <p>&emsp;◦ The server accepts the connection.</p>
+            <p><i>Note: HTTP currently runs over TCP, but could run over any connection-oriented service. The interpretation of the protocol below in the case of a sequenced packet service (such as DECnet(TM) or ISO TP4) is that that the request should be one TPDU, but the response may be many.</i></p>
+
+            <h5> <b>‣ Request</b> </h5>
+            <p>&emsp;◦ The response to a simple GET request is a message in hypertext mark-up language ( HTML ). This is a byte stream of ASCII characters.</p>
+            <p>&emsp;◦ Lines shall be delimited by an optional carriage return followed by a mandatory line feed chararcter. The client should not assume that the carriage return will be present. Lines may be of any length. Well-behaved servers should retrict line length to 80 characters excluding the CR LF pair.</p>
+            <p>&emsp;◦ The format of the message is HTML - that is, a trimmed SGML document. Note that this format allows for menus and hit lists to be returned as hypertext. It also allows for plain ASCII text to be returned following the PLAINTEXT tag.</p>
+            <p>&emsp;◦ The message is terminated by the closing of the connection by the server.</p>
+            <p>&emsp;◦ Well-behaved clients will read the entire document as fast as possible. The client shall not wait for user action (output paging for example) before reading the whole of the document. The server may impose a timeout of the order of 15 seconds on inactivity.</p>
+            <p>&emsp;◦ Error responses are supplied in human readable text in HTML syntax. There is no way to distinguish an error response from a satisfactory response except for the content of the text.</p>
+            
+
+            <h5> <b>‣ Disconnection</b> </h5>
+            <p>&emsp;◦ The TCP-IP connection is broken by the server when the whole document has been transferred.</p>
+            <p>&emsp;◦ The client may abort the transfer by breaking the connection before this, in which case the server shall not record any error condition.</p>
+            <p>&emsp;◦ Requests are idempotent . The server need not store any information about the request after disconnection.</p>
+        
+            <hr>
+
+            <p> <a href="#"><i>Tim BL</i></a> </p>
+        </div>
+      </div>
+ </div>
+
+
+</header>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+ </div>
+ <p>Copyright © 2022 Internet Society</p>
+</footer>
+
+
+</body>
+</html>
